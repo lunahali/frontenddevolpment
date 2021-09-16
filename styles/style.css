@@ -3,3 +3,508 @@
   box-sizing:border-box;  
 }
 
+html,body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  position: sticky;
+  justify-content: space-between;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  height: 185px;
+  width: 50%;
+  background-color: #34c1c3;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+
+.top-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  border-bottom: 1.5px solid rgba(0, 0, 0, .1);
+  padding: 2px;
+}
+
+.top-text p {
+  display: flex;
+  font-family: 'Sofia Pro', sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 64px;
+  width: 100%;
+  padding: 15px;
+}
+
+.logo {
+  display: block;
+  width: auto;
+  height: auto;
+  text-align: center;
+  flex-direction: row;
+  height: 64px;
+  align-items: center;
+}
+
+.logo img {
+  display: inline-block;
+  height: 35px;
+  margin-top: 1em;
+}
+
+.header-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 40px;
+  width: 95%;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+
+}
+
+.header-search img {
+  min-height: 30px;
+  min-width: 30px;
+  height: 30px;
+  width: 30px;
+
+}
+
+.placeholder {
+  line-height: 1;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Sofia Pro', sans-serif;
+  color: #595959;
+}
+
+.placeholder p {
+  text-align: left;
+}
+
+.hamburger-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hamburger-menu img{
+  height: 23px;
+  width: 23px;
+  overflow: hidden;
+}
+
+.profile-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profile-svg img {
+  height: 23px;
+  width: 23px;
+}
+
+.wishlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.wishlist img {
+  height: 23px;
+  width: 23px;
+}
+
+.shopping-bag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.shopping-bag img {
+  height: 23px;
+  width: 23px;
+}
+
+
+
+
+.columns {
+  display: flex;
+}
+
+.columnleft {
+  flex-basis: 50%;
+  height: 100vh;
+  overflow: auto;
+}
+
+.columnright {
+  background-color: #34c1c3;
+  flex-basis: 50%;
+  height: 100vh;
+  overflow: auto;
+
+}
+
+h1 { 
+  display: block;
+  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+  position: relative;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-stretch: expanded;
+  transform: scale(.5, 1.3);
+  letter-spacing: 3px;
+  font-style: italic;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav li {
+  flex-grow: 3;
+}
+
+article {
+  display: block;
+}
+
+.image1 {
+  display: block;
+  position: relative;
+  margin-bottom: .75em;
+
+}
+
+.image1css {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 1em;
+  right: 0;
+  bottom: 0;
+  left: .75em;
+  z-index: -1;
+  background-position: 50%;
+  max-width: 85%;
+
+}
+
+h2 {
+  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
+  font-size: .7em;
+  text-transform: uppercase;
+  position: absolute;
+  left: 1em;
+  top: 20em;
+}
+
+h3 {
+  font-family: 'Sofia Pro', sans-serif;
+  font-size: .875em;
+  font-weight: normal;
+  position: absolute;
+  left: .75em;
+  top: 17em;
+  font-weight: 400;
+  
+}
+
+.image2 {
+  display: block;
+  position: relative;
+  margin-bottom: .75em;
+
+}
+
+.image2css {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 21em;
+  right: 0;
+  bottom: 0;
+  left: .75em;
+  z-index: -1;
+  background-position: 50%;
+  max-width: 85%;
+}
+
+.h2image2 {
+  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
+  font-size: .7em;
+  text-transform: uppercase;
+  position: absolute;
+  left: 1em;
+  top: 49em;
+}
+
+.h3image2 {
+  font-family: 'Sofia Pro', sans-serif;
+  font-size: .875em;
+  font-weight: normal;
+  position: absolute;
+  left: .75em;
+  top: 41em;
+  font-weight: 400;
+  
+}
+
+
+.image3css {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 39em;
+  right: 0;
+  bottom: 0;
+  left: .75em;
+  z-index: -1;
+  background-position: 50%;
+  max-width: 85%;
+}
+
+.h2image3 {
+  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
+  font-size: .7em;
+  text-transform: uppercase;
+  position: absolute;
+  left: 1em;
+  top: 74.5em;
+}
+
+.h3image3 {
+  font-family: 'Sofia Pro', sans-serif;
+  font-size: .875em;
+  font-weight: normal;
+  position: absolute;
+  left: .75em;
+  top: 61em;
+  font-weight: 400;
+}
+
+.gif1 {
+  display: block;
+  position: relative;
+  margin-bottom: .75em;
+
+}
+
+.gif1css {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 1em;
+  right: 0;
+  bottom: 0;
+  left: .75em;
+  background-position: 50%;
+  max-width: 85%;
+}
+
+.h2gif1 {
+  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
+  font-size: .7em;
+  text-transform: uppercase;
+  position: absolute;
+  left: 1em;
+  top: 20em;
+}
+
+.h3gif1 {
+  font-family: 'Sofia Pro', sans-serif;
+  font-size: .875em;
+  font-weight: normal;
+  position: absolute;
+  left: .75em;
+  top: 17em;
+  font-weight: 400;
+  
+}
+
+.image4 {
+  display: block;
+  position: relative;
+  margin-bottom: .75em;
+
+}
+
+.image4css {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 21em;
+  right: 0;
+  bottom: 0;
+  left: .75em;
+  background-position: 50%;
+  max-width: 85%;
+}
+
+.h2image4 {
+  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
+  font-size: .7em;
+  text-transform: uppercase;
+  position: absolute;
+  left: 1em;
+  top: 49em;
+}
+
+.h3image4 {
+  font-family: 'Sofia Pro', sans-serif;
+  font-size: .875em;
+  font-weight: normal;
+  position: absolute;
+  left: .75em;
+  top: 40em;
+  font-weight: 400;
+  
+}
+
+.image5 {
+  display: block;
+  position: relative;
+  margin-bottom: .75em;
+
+}
+
+.image5css {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 39em;
+  right: 0;
+  bottom: 0;
+  left: .75em;
+  background-position: 50%;
+  max-width: 85%;
+}
+
+.h2image5 {
+  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
+  font-size: .7em;
+  text-transform: uppercase;
+  position: absolute;
+  left: 1em;
+  top: 74.5em;
+}
+
+.h3image5 {
+  font-family: 'Sofia Pro', sans-serif;
+  font-size: .875em;
+  font-weight: normal;
+  position: absolute;
+  left: .75em;
+  top: 61.5em;
+  font-weight: 400;
+  
+}
+
+.image6 {
+  display: block;
+  position: relative;
+  margin-bottom: .75em;
+
+}
+
+.image6css {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 57.5em;
+  right: 0;
+  bottom: 0;
+  left: .75em;
+  z-index: -1;
+  background-position: 50%;
+  max-width: 85%;
+}
+
+.h2image6 {
+  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
+  font-size: .7em;
+  text-transform: uppercase;
+  position: absolute;
+  left: 1em;
+  top: 101em;
+}
+
+.h3image6 {
+  font-family: 'Sofia Pro', sans-serif;
+  font-size: .875em;
+  font-weight: normal;
+  position: absolute;
+  left: .75em;
+  top: 82em;
+  font-weight: 400;
+  
+}
+
+.image7 {
+  display: block;
+  position: relative;
+  margin-bottom: .75em;
+
+}
+
+.image7css {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 58em;
+  right: 0;
+  bottom: 0;
+  left: .75em;
+  background-position: 50%;
+  max-width: 85%;
+}
+
+.h2image7 {
+  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
+  font-size: .7em;
+  text-transform: uppercase;
+  position: absolute;
+  left: 1em;
+  top: 101.5em;
+}
+
+.h3image7 {
+  font-family: 'Sofia Pro', sans-serif;
+  font-size: .875em;
+  font-weight: normal;
+  position: absolute;
+  left: .75em;
+  top: 82em;
+  font-weight: 400;
+  
+}
