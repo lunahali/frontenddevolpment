@@ -58,10 +58,10 @@ Beauty Bay make up pagina
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/Breakdownschetsen-01.png" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/Breakdownschetsen-02.png" width="375px" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter): 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
@@ -78,7 +78,7 @@ Beauty Bay make up pagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Het gaat redelijk goed en ik krijg veel dingen in mijn eentje voor elkaar. Het enige lastige vind ik wel is dat ik het gebruik van divjes heel fijn vind. Ik krijg het eerst niet voor elkaar om in de header de halve achtergrondkleur te plaatsen. Dit is samen met Reinier uiteindelijk gelukt, door gebruik te maken van een ::after een een z-index van -1.
 
 
 ### Agenda voor meeting
@@ -117,11 +117,11 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| student 1      | student 2          | student 3    | Luna             |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| dit bespreken  | en dit             | en ik dit    | Ik moet proberen |
+| en dat ook nog | dit als er tijd is | nog een punt | minder divs te   |
+| ...            | ...                | ...          | gebruiken        |
 
 
 ### Verslag van meeting
