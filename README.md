@@ -84,11 +84,11 @@ Het gaat redelijk goed en ik krijg veel dingen in mijn eentje voor elkaar. Het e
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| student 1      | Luna               | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| dit bespreken  | Ik moet proberen   | en ik dit    | en dan ik dat    |
+| en dat ook nog | minder divs te     | nog een punt | dit wil ik zeker |
+| ...            | gebruiken          | ...          | ...              |
 
 
 ### Verslag van meeting
@@ -117,11 +117,11 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | Luna             |
+| student 1      | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | Ik moet proberen |
-| en dat ook nog | dit als er tijd is | nog een punt | minder divs te   |
-| ...            | ...                | ...          | gebruiken        |
+| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| ...            | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
