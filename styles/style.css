@@ -3,6 +3,12 @@
   box-sizing:border-box;  
 }
 
+:root {
+  --white: #ffffff;
+  --blue: #34c1c3;
+  --grey: #0000001a;
+}
+
 html,body {
   margin: 0;
   padding: 0;
@@ -10,7 +16,8 @@ html,body {
 }
 
 header {
-  position: sticky;
+  height: 185px;
+  position: relative;
   justify-content: space-between;
 }
 
@@ -19,11 +26,12 @@ header::after {
   position: absolute;
   height: 185px;
   width: 50%;
-  background-color: #34c1c3;
+  background-color: var(--blue);
   top: 0;
   right: 0;
   z-index: -1;
 }
+
 
 
 .top-text {
@@ -31,7 +39,7 @@ header::after {
   align-items: center;
   width: 100%;
   justify-content: center;
-  border-bottom: 1.5px solid rgba(0, 0, 0, .1);
+  border-bottom: 1.5px solid var(--grey);
   padding: 2px;
 }
 
@@ -51,6 +59,7 @@ header::after {
   height: 64px;
   width: 100%;
   padding: 15px;
+  z-index: 70;
 }
 
 .logo {
@@ -75,7 +84,7 @@ header::after {
   align-items: center;
   min-height: 40px;
   width: 95%;
-  border: 1px solid rgba(0, 0, 0, .1);
+  border: 1px solid var(--grey);
   border-radius: 20px;
   cursor: pointer;
   margin: 0 auto;
@@ -160,18 +169,43 @@ header::after {
   display: flex;
 }
 
-.columnleft {
+.columns > * {
   flex-basis: 50%;
-  height: 100vh;
+  height: calc(100vh - 185px);
   overflow: auto;
+}
+
+.columnleft {
+background-color: var(--white);
+}
+
+@media screen and (min-width: 601px) {
+  section.columnleft {
+    font-size:2em;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  section.columnleft {
+    font-size: 1em;
+  }
 }
 
 .columnright {
   background-color: #34c1c3;
-  flex-basis: 50%;
-  height: 100vh;
-  overflow: auto;
+}
 
+@media screen and (min-width: 601px) {
+  section.columnright {
+    font-size:2em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section.columnright {
+    font-size: 1em;
+  }
 }
 
 h1 { 
@@ -199,312 +233,72 @@ article {
   display: block;
 }
 
-.image1 {
-  display: block;
+main {
+  display: flex;
   position: relative;
   margin-bottom: .75em;
-
 }
 
-.image1css {
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 1em;
-  right: 0;
-  bottom: 0;
-  left: .75em;
-  z-index: -1;
+main img {
+  display: flex;
+  width: 100%;
+  height: auto;
   background-position: 50%;
   max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  
+} 
 
+article {
+  position: relative;
+  margin-bottom: .75em;
 }
 
 h2 {
-  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
   font-size: .7em;
+  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
   text-transform: uppercase;
-  position: absolute;
-  left: 1em;
-  top: 20em;
+  width: 100%;
+  margin-left: 8%;
+  margin-right: 8%;
 }
+
 
 h3 {
   font-family: 'Sofia Pro', sans-serif;
   font-size: .875em;
   font-weight: normal;
-  position: absolute;
-  left: .75em;
-  top: 17em;
   font-weight: 400;
-  
+  margin-left: 8%;
+  margin-right: 10%;
 }
 
-.image2 {
+
+.button-container {
   display: block;
+  top: 33em;
+}
+
+.buttons {
+  display: flex;
   position: relative;
-  margin-bottom: .75em;
-
-}
-
-.image2css {
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 21em;
-  right: 0;
-  bottom: 0;
-  left: .75em;
-  z-index: -1;
-  background-position: 50%;
-  max-width: 85%;
-}
-
-.h2image2 {
-  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
-  font-size: .7em;
-  text-transform: uppercase;
-  position: absolute;
-  left: 1em;
-  top: 49em;
-}
-
-.h3image2 {
   font-family: 'Sofia Pro', sans-serif;
-  font-size: .875em;
-  font-weight: normal;
-  position: absolute;
-  left: .75em;
-  top: 41em;
-  font-weight: 400;
-  
-}
-
-
-.image3css {
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 39em;
-  right: 0;
-  bottom: 0;
-  left: .75em;
-  z-index: -1;
-  background-position: 50%;
-  max-width: 85%;
-}
-
-.h2image3 {
-  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
-  font-size: .7em;
-  text-transform: uppercase;
-  position: absolute;
-  left: 1em;
-  top: 74.5em;
-}
-
-.h3image3 {
-  font-family: 'Sofia Pro', sans-serif;
-  font-size: .875em;
-  font-weight: normal;
-  position: absolute;
-  left: .75em;
-  top: 61em;
-  font-weight: 400;
-}
-
-.gif1 {
-  display: block;
-  position: relative;
-  margin-bottom: .75em;
-
-}
-
-.gif1css {
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 1em;
-  right: 0;
-  bottom: 0;
-  left: .75em;
-  background-position: 50%;
-  max-width: 85%;
-}
-
-.h2gif1 {
-  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
-  font-size: .7em;
-  text-transform: uppercase;
-  position: absolute;
-  left: 1em;
-  top: 20em;
-}
-
-.h3gif1 {
-  font-family: 'Sofia Pro', sans-serif;
-  font-size: .875em;
-  font-weight: normal;
-  position: absolute;
-  left: .75em;
-  top: 17em;
-  font-weight: 400;
-  
-}
-
-.image4 {
-  display: block;
-  position: relative;
-  margin-bottom: .75em;
-
-}
-
-.image4css {
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 21em;
-  right: 0;
-  bottom: 0;
-  left: .75em;
-  background-position: 50%;
-  max-width: 85%;
-}
-
-.h2image4 {
-  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
-  font-size: .7em;
-  text-transform: uppercase;
-  position: absolute;
-  left: 1em;
-  top: 49em;
-}
-
-.h3image4 {
-  font-family: 'Sofia Pro', sans-serif;
-  font-size: .875em;
-  font-weight: normal;
-  position: absolute;
-  left: .75em;
-  top: 40em;
-  font-weight: 400;
-  
-}
-
-.image5 {
-  display: block;
-  position: relative;
-  margin-bottom: .75em;
-
-}
-
-.image5css {
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 39em;
-  right: 0;
-  bottom: 0;
-  left: .75em;
-  background-position: 50%;
-  max-width: 85%;
-}
-
-.h2image5 {
-  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
-  font-size: .7em;
-  text-transform: uppercase;
-  position: absolute;
-  left: 1em;
-  top: 74.5em;
-}
-
-.h3image5 {
-  font-family: 'Sofia Pro', sans-serif;
-  font-size: .875em;
-  font-weight: normal;
-  position: absolute;
-  left: .75em;
-  top: 61.5em;
-  font-weight: 400;
-  
-}
-
-.image6 {
-  display: block;
-  position: relative;
-  margin-bottom: .75em;
-
-}
-
-.image6css {
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 57.5em;
-  right: 0;
-  bottom: 0;
-  left: .75em;
-  z-index: -1;
-  background-position: 50%;
-  max-width: 85%;
-}
-
-.h2image6 {
-  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
-  font-size: .7em;
-  text-transform: uppercase;
-  position: absolute;
-  left: 1em;
-  top: 101em;
-}
-
-.h3image6 {
-  font-family: 'Sofia Pro', sans-serif;
-  font-size: .875em;
-  font-weight: normal;
-  position: absolute;
-  left: .75em;
-  top: 82em;
-  font-weight: 400;
-  
-}
-
-.image7 {
-  display: block;
-  position: relative;
-  margin-bottom: .75em;
-
-}
-
-.image7css {
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 58em;
-  right: 0;
-  bottom: 0;
-  left: .75em;
-  background-position: 50%;
-  max-width: 85%;
-}
-
-.h2image7 {
-  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
-  font-size: .7em;
-  text-transform: uppercase;
-  position: absolute;
-  left: 1em;
-  top: 101.5em;
-}
-
-.h3image7 {
-  font-family: 'Sofia Pro', sans-serif;
-  font-size: .875em;
-  font-weight: normal;
-  position: absolute;
-  left: .75em;
-  top: 82em;
-  font-weight: 400;
-  
-}
+  color: var(--white);
+  background: black;
+  height: 2.75em;
+  border: 1px solid black;
+  outline: none;
+  align-items: center;
+  border-radius: 6px;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  cursor: pointer;
+  line-height: 1;
+  padding: .4em 1em .6em;
+  text-align: center;
+  text-decoration: none;
+  margin: 1em;
+  max-width: 100%;
+} 
