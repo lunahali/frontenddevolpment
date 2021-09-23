@@ -84,20 +84,20 @@ Het gaat redelijk goed en ik krijg veel dingen in mijn eentje voor elkaar. Het e
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | Luna               | student 3    | student 4        |
+| Mik            | Luna               | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | Ik moet proberen   | en ik dit    | en dan ik dat    |
-| en dat ook nog | minder divs te     | nog een punt | dit wil ik zeker |
-| ...            | gebruiken          | ...          | ...              |
-
+| Ik moet vooral | Ik moet proberen   | en ik dit    | en dan ik dat    |
+| gewoon tempo   | minder divs te     | nog een punt | dit wil ik zeker |
+| gaan maken     | gebruiken.         | ...          | ...              |
+  zodat er meer
+  staat.
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Netter werken in css
+- Meer vragen stellen als je het niet snapt.
+- 
 
 </details>
 
@@ -111,17 +111,16 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Het ging deze week iets minder, omdat ik ook ziek was geweest. Hierdoor ben ik een beetje achter gaan lopen.
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| luna           | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Meer vragen    | en dit             | en ik dit    | en dan ik dat    |
+| als ik iets    | dit als er tijd is | nog een punt | dit wil ik zeker |
+| niet snap      | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
