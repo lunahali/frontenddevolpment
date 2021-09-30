@@ -3,28 +3,32 @@
   box-sizing:border-box;  
 }
 
+/* Var root */
 :root {
   --white: #ffffff;
   --blue: #34c1c3;
   --grey: #0000001a;
+  --pink: #ff5c87;
 }
 
+
+/* html */
 html,body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
+/* Header */
 header {
-  height: 185px;
   position: relative;
   justify-content: space-between;
 }
 
-header::after {
+/* Blauwe achtergrond */
+.header-page1::after {
   content: '';
   position: absolute;
-  height: 185px;
+  height: 280px;
   width: 50%;
   background-color: var(--blue);
   top: 0;
@@ -32,8 +36,87 @@ header::after {
   z-index: -1;
 }
 
+/* nav */
+ul {
+  width: 100%;
+}
 
+li {
+  list-style: none;
+  font-family: 'Sofia Pro', sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Responsive hamburger menu */
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5em;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bars {
+  display: block;
+  width: 23px;
+  height: 23px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger img{
+  height: 23px;
+  width: 23px;
+  overflow: hidden;
+  display: block;
+  width: auto;
+  height: auto;
+  text-align: center;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 1250px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5em;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+  
+  .nav-item {
+    margin: 2.5em 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* Bovenste tekst */
 .top-text {
   display: flex;
   align-items: center;
@@ -51,6 +134,7 @@ header::after {
   text-align: center;
 }
 
+/* Icoontjes in de header */
 .header-icons {
   display: flex;
   justify-content: space-between;
@@ -62,6 +146,7 @@ header::after {
   z-index: 70;
 }
 
+/* Logo */
 .logo {
   display: block;
   width: auto;
@@ -70,14 +155,17 @@ header::after {
   flex-direction: row;
   height: 64px;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
 }
 
 .logo img {
   display: inline-block;
   height: 35px;
-  margin-top: 1em;
 }
 
+/* Zoek functie */
 .header-search {
   display: flex;
   flex-direction: row;
@@ -89,7 +177,6 @@ header::after {
   cursor: pointer;
   margin: 0 auto;
   padding: 0 15px 0 15px;
-
 }
 
 .header-search img {
@@ -97,9 +184,9 @@ header::after {
   min-width: 30px;
   height: 30px;
   width: 30px;
-
 }
 
+/* Tekst in zoekbar */
 .placeholder {
   line-height: 1;
   width: 100%;
@@ -113,24 +200,13 @@ header::after {
   text-align: left;
 }
 
-.hamburger-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.hamburger-menu img{
-  height: 23px;
-  width: 23px;
-  overflow: hidden;
-}
-
+/* Profiel icon */
 .profile-svg {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin-left: 1em;
 }
 
 .profile-svg img {
@@ -138,11 +214,13 @@ header::after {
   width: 23px;
 }
 
+/* Hartje icon */
 .wishlist {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin-right: 1em;
 }
 
 .wishlist img {
@@ -150,6 +228,7 @@ header::after {
   width: 23px;
 }
 
+/* Winkelmandje icon */
 .shopping-bag {
   display: flex;
   justify-content: center;
@@ -162,9 +241,16 @@ header::after {
   width: 23px;
 }
 
+/* Navigatie */
+header nav ul {
+  display: flex;
+}
 
+header nav li {
+  flex-grow: 3;
+}
 
-
+/* Columns */
 .columns {
   display: flex;
 }
@@ -175,10 +261,15 @@ header::after {
   overflow: auto;
 }
 
+/* Linkercolumn */
 .columnleft {
-background-color: var(--white);
+  display: flex;
+  background-color: var(--white);
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Grote van de tekst */
 @media screen and (min-width: 601px) {
   section.columnleft {
     font-size:2em;
@@ -192,10 +283,15 @@ background-color: var(--white);
   }
 }
 
+/* Rechtercolumn */
 .columnright {
   background-color: #34c1c3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Grote van de tekst */
 @media screen and (min-width: 601px) {
   section.columnright {
     font-size:2em;
@@ -208,6 +304,7 @@ background-color: var(--white);
   }
 }
 
+/* h1 */
 h1 { 
   display: block;
   font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
@@ -221,60 +318,61 @@ h1 {
   font-style: italic;
 }
 
-header nav ul {
-  display: flex;
-}
-
-header nav li {
-  flex-grow: 3;
-}
-
-article {
-  display: block;
-}
-
+/* Main */
 main {
-  display: flex;
   position: relative;
   margin-bottom: .75em;
 }
 
-main img {
+/* Plaatjes in de kolomen */
+.columns img {
   display: flex;
   width: 100%;
   height: auto;
   background-position: 50%;
-  max-width: 85%;
   margin-left: auto;
   margin-right: auto;
+  max-width: 85%;
   
 } 
 
+/* Artikelen */
 article {
+  display: block;
   position: relative;
   margin-bottom: .75em;
+  max-width: 15em;
 }
 
-h2 {
-  font-size: .7em;
-  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
-  text-transform: uppercase;
-  width: 100%;
+/* H2 in de artikelen */
+article h2 {
   margin-left: 8%;
   margin-right: 8%;
 }
 
+/* H3 in de artikelen */
+article h3 {
+  margin-left: 8%;
+  margin-right: 10%;
+}
 
+/* h2 */
+h2 {
+  font-size: .7em;
+  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
+  text-transform: uppercase;
+
+}
+
+/* h3 */
 h3 {
   font-family: 'Sofia Pro', sans-serif;
   font-size: .875em;
   font-weight: normal;
   font-weight: 400;
-  margin-left: 8%;
-  margin-right: 10%;
 }
 
-
+/* buttons */
 .button-container {
   display: block;
   top: 33em;
@@ -302,3 +400,177 @@ h3 {
   margin: 1em;
   max-width: 100%;
 } 
+
+
+
+/* Tweede pagina */
+
+/* Roze achtergrond */
+.background::after {
+  content: '';
+  position: absolute;
+  height: 480px;
+  width: 100vw;
+  background-color: var(--pink);
+  top: 0;
+  z-index: -1;
+}
+
+/* Kleine tekst in roze achtergrond */
+.smaller-text {
+  text-align: center;
+  padding-top: 2em;
+}
+
+/* Grote tekst in de roze achtergrond */
+.big-text {
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+  padding-bottom: .4em;
+}
+
+/* Ronde plaatjes in de roze achtergrond */
+.scroller {
+  width: 100vw;
+  display: flex;
+  overflow-x: scroll;
+  gap: 1em;
+}
+
+/* Plaats van de ronde plaatjes */
+@media screen and (min-width: 601px) {
+  .scroller {
+    justify-content: center;
+  }
+}
+
+/* Div ronde plaatjes */
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1em; 
+  margin-top: .75em 0 .75em 0;
+}
+
+/* Opmaak ronde plaatjes */
+.items > img {
+  border-radius: 50%;
+  width:  69px;
+  height: auto;
+  max-width: 69px;
+}
+
+/* Tekst onder de ronde plaatjes */
+.items > a {
+  font-family: 'Sofia Pro', sans-serif;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+/* H2 op de tweede pagina */
+.bovenste_gedeelte h2 {
+  font-size: 1em;
+  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/* H3 op de tweede pagina */
+.bovenste_gedeelte h3 {
+  font-family: 'Sofia Pro', sans-serif;
+  font-size: 1.3em;
+  font-weight: normal;
+  margin-left: 7%;
+  margin-top: 0;
+  text-align: center;
+}
+
+/* Grote foto */
+.big_picture {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 85%;
+}
+
+
+/* Tekst onder de grote foto */
+.detail .title_blog {
+  text-align: center;
+}
+
+/* H2 in bovenste sectoe */
+.section_artikelen h2 {
+  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1em;
+  font-stretch: expanded;
+  letter-spacing: 3px;
+  font-style: italic;
+  margin-left: 1em;
+  margin-bottom: 5em;
+}
+
+ /* Opmaak buttons */
+.buttons_filter {
+  position: relative;
+  font-family: 'Sofia Pro', sans-serif;
+  color: var(--white);
+  background: black;
+  border: 1px solid black;
+  outline: none;
+  align-items: center;
+  border-radius: 6px;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1;
+  padding: .4em 1em .6em;
+  text-align: center;
+  text-decoration: none;
+  margin: 1em;
+  float: right;
+}
+
+/* Div artikelen */
+.artikelen {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  margin: 2em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* H2 in de artikelen */
+.artikelen h2 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Druk Wide CY Web Bold", "Trebuchet MS", Helvetica, sans-serif;
+  font-size: .75em;
+  font-stretch: expanded;
+  letter-spacing: 3px;
+  font-style: italic;
+  margin: auto;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+  padding: 2.5em 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--pink);
+}
+
+/* Links in footer */
+footer a {
+  font-family: 'Sofia Pro', sans-serif;
+  text-align: left;
+  padding: 0 .6em;
+  margin: .5em;
+}
+
