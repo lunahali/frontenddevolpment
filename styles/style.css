@@ -39,20 +39,49 @@ header {
 /* nav */
 ul {
   width: 100%;
+  display: flex;
+  padding: 0;
 }
 
 li {
   list-style: none;
   font-family: 'Sofia Pro', sans-serif;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   position: relative;
+  width: 50px;
 }
 
-a {
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  display: block;
+  position: relative;
   text-decoration: none;
   color: black;
+}
+
+.navbar a::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--pink);
+  opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+.navbar a:hover::after,
+.navbar a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
 }
 
 /* Responsive hamburger menu */
@@ -62,44 +91,36 @@ a {
   align-items: center;
 }
 
-.nav-item {
-  margin-left: 5em;
-}
-
 .hamburger {
   display: none;
 }
 
-.bars {
-  display: block;
-  width: 23px;
-  height: 23px;
+.bar {
+  display: flex;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  background-color: #101010;
+  position: relative;
+  margin-left: 2em;
 }
 
-.hamburger img{
-  height: 23px;
-  width: 23px;
-  overflow: hidden;
-  display: block;
-  width: auto;
-  height: auto;
-  text-align: center;
-  flex-direction: row;
-}
 
 @media only screen and (max-width: 1250px) {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 5em;
-    flex-direction: column;
+    top: 6.5em;
     background-color: var(--white);
     width: 100%;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px rgba(0, 0, 0, 0.05);
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 3;
   }
 
   .nav-menu.active {
@@ -107,7 +128,7 @@ a {
   }
   
   .nav-item {
-    margin: 2.5em 0;
+    margin: .7em 0;
   }
 
   .hamburger {
@@ -173,7 +194,7 @@ a {
   min-height: 40px;
   width: 95%;
   border: 1px solid var(--grey);
-  border-radius: 20px;
+  border-radius: 40px;
   cursor: pointer;
   margin: 0 auto;
   padding: 0 15px 0 15px;
@@ -183,17 +204,89 @@ a {
   min-height: 30px;
   min-width: 30px;
   height: 30px;
-  width: 30px;
+  width: 30px;  
+  margin-left: auto;
+}
+
+
+.cursor::after {
+  content: '';
+  display: flex;
+  margin-left: 3px;
+  background-color: black;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+h4.cursor::after {
+  height: 20px;
+  width: 5px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+    49% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
 }
 
 /* Tekst in zoekbar */
 .placeholder {
+  transform-origin: 0 50%;
+  transform: translateX(10px);
   line-height: 1;
-  width: 100%;
   font-size: 15px;
   font-weight: 400;
   font-family: 'Sofia Pro', sans-serif;
   color: #595959;
+}
+
+
+.placeholder.expand {
+  animation: MovePlaceholder 220ms
+  both linear;
+}
+
+.placeholder.return {
+  animation: ReturnPlaceholder 220ms
+  both linear;
+}
+
+@keyframes MovePlaceholder {
+  0% {
+    transform: translateX(10px)
+  translateY(0) rotate(0)
+  }
+  60% {
+    transform: translateX(0)
+  translateY(-8px) rotate(-18deg)
+  scale(0.92)
+  }
+  100% {
+    transform: translateX(0)
+  translateY(-30px) rotate(0deg)
+  scale(0.75)
+  }
+}
+
+@keyframes ReturnPlaceholder {
+  0% {
+    transform: translateX(0)
+  translateY(-30px) scale(0.75)
+  }
+  100% {
+    transform: translateX(10px)
+  translateY(0)
+  }
 }
 
 .placeholder p {
@@ -327,14 +420,14 @@ main {
 /* Plaatjes in de kolomen */
 .columns img {
   display: flex;
-  width: 100%;
+  width: 408px;
   height: auto;
   background-position: 50%;
   margin-left: auto;
   margin-right: auto;
   max-width: 85%;
-  
 } 
+
 
 /* Artikelen */
 article {
@@ -342,7 +435,16 @@ article {
   position: relative;
   margin-bottom: .75em;
   max-width: 15em;
+  width: 480px;
 }
+
+@media screen and (max-width: 920px) {
+  article {
+    max-width: 80%;
+  }
+}
+
+
 
 /* H2 in de artikelen */
 article h2 {
@@ -438,6 +540,31 @@ h3 {
   gap: 1em;
 }
 
+.scroller a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.scroller a::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--white);
+  opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+.scroller a:hover::after,
+.scroller a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
 /* Plaats van de ronde plaatjes */
 @media screen and (min-width: 601px) {
   .scroller {
@@ -493,6 +620,7 @@ h3 {
   margin: auto;
   justify-content: center;
   width: 85%;
+  cursor: pointer;
 }
 
 
@@ -572,5 +700,27 @@ footer a {
   text-align: left;
   padding: 0 .6em;
   margin: .5em;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+footer a::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--white);
+  opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+footer a:hover::after,
+footer a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
 }
 
