@@ -203,7 +203,7 @@ Het in elkaar zetten van de html ging redelijk snel en soepel. Ik liep wel af en
 ### Screenshot(s)
 <img src="images/site-mobile1.png" width="375px" alt="screenshot mobiel deel 1">
 <img src="images/site-mobile2.png" width="375px" alt="screenshot mobiel deel 2">
-<img src="images/desktop1,png" width="375px" alt="screenshot desktop deel 1">
+<img src="images/desktop1.png" width="375px" alt="screenshot desktop deel 1">
 <img src="images/desktop2.png" width="375px" alt="screenshot desktop deel 2">
 
 
