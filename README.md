@@ -63,8 +63,6 @@ Beauty Bay make up pagina
 ### dynamisch deel (bijv menu): 
 <img src="images/Breakdownschetsen-02.png" width="375px" alt="breakdown van een dynamisch deel">
 
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -126,8 +124,8 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
+- gewoon meer vragen in de lessen
+- goed zoeken op internet
 - nog een punt
 - ...
 
@@ -143,30 +141,30 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
-Lijst met je bevindingen die in de test naar voren kwamen:
+Mijn tab werkt gelukkig. Ook mijn screenreader deed het hoe het hoorde. 
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Motoriek
+Mijn site is getest door middel van een elastiekjes aan twee elastiekjes te binden. Het was nog wel mogelijk om alles te doen, alleen was alles veel slomer. Een manier om dit op te losen is door grotere knoppen te gebruiken en sneltoetsen toe te voegen.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+<img src="images/motoriek.PNG" width="375px" alt="foto test motoriek">
 
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Visuele beperking
+Door middel van brilletjes met verschillende visuele beperkingen kon je kijken of je site toegankelijk was voor deze mensen. Ik gebruik om mijn site redelijk veel contrast, hierdoor was het wel duidelijk zichtbaar. Een oplossing is dan ook meer contrast en grotere lettertype gebruiken.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+<img src="images/visueel.PNG" width="375px" alt="foto test visueel">
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Concentratieproblemen
+Een balloon hooghouden en tegelijkertijd op een site navigeren moest nabootsen hoe het voelt om concentratieproblemen te hebben. Dit was dan ook te merken, want de balloon was de main focus. Een oplossing hiervoor is weinig animatie en weinig tekst.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+<img src="images/concentratie.PNG" width="375px" alt="foto test concentratie">
+
+
+#### Spasme
+We kregen een apparaat waarmee je na kon botsen hoe het was als je spasme hebt. Deze mensen vinden het denk ik fijn om te werken met de tab toets. Dat ging dan ook redelijk goed. Een oplossing is een goed werkende site die met de tab toets te bedienen valt.
+
+<img src="images/spasme.PNG" width="375px" alt="foto test spasme">
 
 </details>
 
@@ -180,26 +178,13 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Ik was hier redelijk klaar met mijn site en had geen vragen meer.
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Site afmaken
 
 </details>
 
@@ -214,10 +199,13 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Het in elkaar zetten van de html ging redelijk snel en soepel. Ik liep wel af en toe vast bij de css. Ik heb ook heel lang lopen kloten met de responsive navigatie. Ik ben hier wel een hele dag mee bezig geweest. Ik was weer koppig en wilde het niet vragen. Uit eindelijk heb ik het voor elkaar gekregen.
 ### Screenshot(s)
+<img src="images/site-mobile1.png" width="375px" alt="screenshot mobiel deel 1">
+<img src="images/site-mobile2.png" width="375px" alt="screenshot mobiel deel 2">
+<img src="images/desktop1,png" width="375px" alt="screenshot desktop deel 1">
+<img src="images/desktop2.png" width="375px" alt="screenshot desktop deel 2">
 
-hier screenshot(s) van je eindresultaat
 
 </details>
 
@@ -232,8 +220,9 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
+2. https://codepen.io/michellebarker/pen/MWJajOb
+3. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
+4. https://codepen.io/daviddcarr/pen/XVyQMM
 
 </details>
